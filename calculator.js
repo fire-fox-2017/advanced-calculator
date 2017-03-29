@@ -3,20 +3,37 @@
 class Calculator {
   //write your code here
   constructor () {
+    this.data = 0
+    return this
   }
-  add () {
+  add (x) {
+    this.data = this.data + x
+    return this
   }
-  substract () {
+  substract (x) {
+    this.data = this.data - x
+    return this
   }
-  multiply () {
+  multiply (x) {
+    this.data = this.data * x
+    return this
   }
-  divide () {
+  divide (x) {
+    this.data = this.data / x
+    return this
   }
-  square () {
+  square (x) {
+    this.data = Math.pow(this.data, x)
+    return this
   }
   squareRoot () {
+    this.data = Math.sqrt(this.data)
+    return this.data
   }
 }
+let coba = new Calculator()
+console.log(coba.add(10).substract(2).multiply(4).divide(1).square(2).squareRoot());
+
 
 /** note : you can use several features from ecmascript, such as:
 * - Classes

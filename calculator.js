@@ -3,18 +3,41 @@
 class Calculator {
   //write your code here
   constructor () {
+    this._angka = 0;
+    this._pi = 3.14;
   }
-  add () {
+  add (angka) {
+    this._angka += angka;
+    return this;
   }
-  substract () {
+  substract (angka) {
+    this._angka -= angka;
+    return this;
   }
-  multiply () {
+  multiply (angka) {
+    this._angka *= angka;
+    return this;
   }
-  divide () {
+  divide (angka) {
+    this._angka /= angka;
+    return this;
   }
-  square () {
+  square (angka) {
+    this._angka = Math.pow(this._angka , angka);
+    return this;
   }
-  squareRoot () {
+  squareRoot (angka) {
+    this._angka = Math.sqrt(this._angka ,angka);
+    return this;
+  }
+
+  getCircleArea(){
+    this._angka = 3.14 * (Math.pow(this._angka , 2));
+    return this;
+  }
+
+  print(){
+    console.log(this._angka);
   }
 }
 
@@ -25,6 +48,7 @@ class Calculator {
 * - Template Literals
 * - Method Chaining
 */
+
 
 module.exports = {
   Calculator

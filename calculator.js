@@ -2,8 +2,8 @@
 
 class Calculator {
   //write your code here
-  constructor () {
-    this.newResult = 0
+  constructor (numAwal=0) {
+    this.newResult = numAwal
   }
   add (num) {
     this.newResult = this.newResult + num

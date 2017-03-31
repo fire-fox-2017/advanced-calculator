@@ -25,8 +25,8 @@ class Calculator {
     console.log(this.hasil);
     return this;
   }
-  square () {
-    this.hasil*=this.hasil;
+  square (pangkat) {
+    this.hasil =Math.pow(this.hasil,pangkat)
     console.log(this.hasil);
     return this;
   }
@@ -35,10 +35,15 @@ class Calculator {
     console.log(this.hasil);
     return this;
   }
+  pi(){
+    return Math.PI;
+
+  }
 }
 
 let kal = new Calculator(5);
-kal.add(2).substract(3).multiply(2).divide(2).square().squareRoot();
+kal.add(2).substract(3).multiply(2).divide(2).square(2).squareRoot();
+console.log(kal.pi());
 
 
 /** note : you can use several features from ecmascript, such as:

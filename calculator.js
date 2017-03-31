@@ -7,27 +7,27 @@ class Calculator {
   }
   add (tambah) {
     this.hasil+=tambah;
-    console.log(this.hasil);
+    // console.log(this.hasil);
     return this;
   }
   substract (kurang) {
     this.hasil-=kurang;
-    console.log(this.hasil);
+    // console.log(this.hasil);
     return this;
   }
   multiply (kali) {
     this.hasil*=kali;
-    console.log(this.hasil);
+    // console.log(this.hasil);
     return this;
   }
   divide (bagi) {
     this.hasil/=bagi;
-    console.log(this.hasil);
+    // console.log(this.hasil);
     return this;
   }
   square (pangkat) {
     this.hasil =Math.pow(this.hasil,pangkat)
-    console.log(this.hasil);
+    // console.log(this.hasil);
     return this;
   }
   squareRoot () {
@@ -41,9 +41,9 @@ class Calculator {
   }
 }
 
-let kal = new Calculator(5);
-kal.add(2).substract(3).multiply(2).divide(2).square(2).squareRoot();
-console.log(kal.pi());
+// let kal = new Calculator(5);
+// kal.add(2).substract(3).multiply(2).divide(2).square(2).squareRoot();
+
 
 
 /** note : you can use several features from ecmascript, such as:

@@ -48,6 +48,16 @@ class Calculator {
   }
 }
 
+
+let calc = new Calculator();
+calc.add(10).show();
+calc.substract(10).add(5).show();
+calc.multiply(2).divide(10).show();
+calc.add(1).square().show();
+calc.squareRoot().show();
+
+
+
 /** note : you can use several features from ecmascript, such as:
 * - Classes
 * - Default Parameters

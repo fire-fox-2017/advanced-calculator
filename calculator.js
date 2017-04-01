@@ -7,31 +7,31 @@ class Calculator {
   }
   add (value) {
     this.num += value;
-    return this.num;
+    return this;
   }
   substract (value) {
     this.num -= value;
-    return this.num;
+    return this;
   }
   multiply (value) {
     this.num *= value;
-    return this.num;
+    return this;
   }
   divide (value) {
     this.num /= value;
-    return this.num;
+    return this;
   }
   square (value) {
     this.num = Math.pow(this.num , value);
-    return this.num;
+    return this;
   }
   squareRoot (value) {
     this.num = Math.sqrt(this.num ,value);
-    return this.num;
+    return this;
   }
   Circle(){
     this.num = 3.14 * (Math.pow(this.num , 2));
-    return this.num;
+    return this;
   }
 }
 
@@ -42,8 +42,6 @@ class Calculator {
 * - Template Literals
 * - Method Chaining
 */
-// let my_Calculator = new Calculator(4);
-// console.log(my_Calculator.square(2));
 
 module.exports = {
   Calculator

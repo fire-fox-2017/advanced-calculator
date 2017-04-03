@@ -30,12 +30,23 @@ class Calculator {
     this.firstNum = Math.sqrt(this.firstNum);
     return this;
   }
+  circle(){
+    this.firstNum = Math.PI * this.firstNum;
+    return this;
+  }
   print(){
     console.log(this.firstNum);
   }
 }
 var calc = new Calculator();
-calc.add(5).substract(3).multiply(4).divide(2).square().squareRoot().print();
+calc.add(5)
+  .substract(3)
+  .multiply(4)
+  .divide(2)
+  .square()
+  .squareRoot()
+  .circle()
+  .print();
 
 /** note : you can use several features from ecmascript, such as:
 * - Classes

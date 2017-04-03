@@ -3,18 +3,46 @@
 class Calculator {
   //write your code here
   constructor () {
+    this._number = 0;
+    }
+  add (number) {
+    this._number += number;
+    return this;
   }
-  add () {
+  substract (number) {
+    this._number -= number;
+    return this;
   }
-  substract () {
+  multiply (number) {
+    this._number -= number;;
+    return this;
   }
-  multiply () {
+  divide (number) {
+    this._number /= number;
+    return this;
   }
-  divide () {
+  square (number) {
+    this._number = Math.pow(this._number, 2);
+    return this;
   }
-  square () {
+  power (number) {
+    this.number = Math.pow(this._number, number);
+    return this;
   }
-  squareRoot () {
+  squareRoot (number) {
+    this._number = Math.sqrt(this._number, number);
+    return this;
+  }
+  getCircleArea(){
+  this._number = Math.PI * (Math.pow(this._number , 2));
+    return this;
+  }
+  clear() {
+    this._number = 0;
+    return this;
+  }
+  print(){
+    console.log(this._number);
   }
 }
 

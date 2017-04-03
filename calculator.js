@@ -3,18 +3,43 @@
 class Calculator {
   //write your code here
   constructor () {
+    this.result = 0;
+    this.pi = Math.PI;
   }
-  add () {
+  add (number) {
+    this.result += number;
+    return this;
   }
-  substract () {
+  substract (number) {
+    this.result -= number;
+    return this;
   }
-  multiply () {
+  multiply (number) {
+    this.result *= number;
+    return this;
   }
-  divide () {
+  divide (number) {
+    this.result /= number;
+    return this;
   }
   square () {
+    this.result = Math.pow(this.result, 2);
+    return this;
   }
   squareRoot () {
+    this.result = Math.sqrt(this.result);
+    return this;
+  }
+  circleArea (){
+    this.result = this.pi * Math.pow(this.result, 2);
+  }
+  show (){
+    console.log(this.result);
+    return this;
+  }
+  clear (){
+    this.result = 0;
+    return this;
   }
 }
 
@@ -25,6 +50,10 @@ class Calculator {
 * - Template Literals
 * - Method Chaining
 */
+var calc = new Calculator();
+calc.add(5).substract(3).multiply(4).divide(2).square().squareRoot().show();
+
+
 
 module.exports = {
   Calculator

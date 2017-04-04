@@ -2,25 +2,23 @@
 
 class Calculator {
   //write your code here
-  constructor (bil1,bil2) {
-    this._bil1=bil1;
-    this._bil2=bil2;
-    this.hasil=0;
+  constructor (angka) {
+    this.hasil=angka;
   }
-  add () {
-    this.hasil= this._bil1 + this._bil2;
+  add (angka) {
+    this.hasil= this.hasil + angka;
     return this;
   }
-  substract () {
-    this.hasil= this._bil1 + this._bil2;
+  substract (angka) {
+    this.hasil= this.hasil + angka;
     return this;
   }
-  multiply () {
-    this.hasil= this._bil1*this._bil2;
+  multiply (angka) {
+    this.hasil= this.hasil*angka;
     return this;
   }
-  divide () {
-    this.hasil= this._bil1/this._bil2;
+  divide (angka) {
+    this.hasil= this.hasil/angka;
     return this;
   }
   square () {
@@ -44,9 +42,9 @@ class Calculator {
 * - Template Literals
 * - Method Chaining
 */
-var hitung = new Calculator(2,4);
+var hitung = new Calculator(2);
 
-hitung.add().substract ().multiply ().divide ().square ().squareRoot ().print();
+hitung.add(2).substract (3).multiply (2).divide (3).square ().squareRoot ().print();
 
 
 module.exports = {

@@ -31,7 +31,7 @@ class Calculator {
     return this;
   }
   circle(){
-    this.firstNum = Math.PI * this.firstNum;
+    this.firstNum = (this.firstNum * this.firstNum)* Math.PI;
     return this;
   }
   print(){
